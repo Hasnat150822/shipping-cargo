@@ -1,0 +1,9 @@
+<svg id="Group_3065" data-name="Group 3065" xmlns="http://www.w3.org/2000/svg" width="45.63" height="64.224" viewBox="0 0 45.63 64.224">
+  <g id="Icon">
+    <ellipse id="Icon_background" data-name="Icon background" cx="22.815" cy="32.112" rx="22.815" ry="32.112" fill="#f4f7fe"/>
+    <g id="domain" transform="translate(9.778 13.762)">
+      <path id="Vector" d="M0,0H26.074V36.7H0Z" fill="none"/>
+      <path id="Vector-2" data-name="Vector" d="M10.864,6.117V0H0V27.525H21.729V6.117ZM4.346,24.466H2.173V21.408H4.346Zm0-6.117H2.173V15.291H4.346Zm0-6.117H2.173V9.175H4.346Zm0-6.117H2.173V3.058H4.346Zm4.346,18.35H6.519V21.408H8.691Zm0-6.117H6.519V15.291H8.691Zm0-6.117H6.519V9.175H8.691Zm0-6.117H6.519V3.058H8.691Zm10.864,18.35H10.864V21.408h2.173V18.35H10.864V15.291h2.173V12.233H10.864V9.175h8.691ZM17.383,12.233H15.21v3.058h2.173Zm0,6.117H15.21v3.058h2.173Z" transform="translate(2.173 4.587)" fill="#1c6cb7"/>
+    </g>
+  </g>
+</svg>

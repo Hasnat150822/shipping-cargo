@@ -1,0 +1,78 @@
+<section class="pb-4">
+    <div class="row align-items-center">
+        <div class="col-5">
+            <div class="mini-card-shadow primary-gradient-90 right-ended-radius">
+                <img class="bg-light-gold icon" src="../../../assets/ico/total-qout-light.svg" height="70px" width="70px">
+                <strong class="ms-2 text-white">Qoutation</strong>
+            </div>
+        </div>
+        <div class="col-7">
+            <span class="d-flex py-2 px-4 rounded-pill primary-border justify-content-between mini-square-shadow">
+                <span class="d-flex justify-content-between">
+                    <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'borderClass':'border-action', 'icon':'../../../assets/ico/save.svg', 'text':'Save', 'textClass':'text-action'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'borderClass':'border-update', 'icon':'../../../assets/ico/edit.svg', 'text':'Update', 'textClass':'text-update'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'borderClass':'border-danger', 'icon':'../../../assets/ico/delete.svg', 'text':'Discard', 'textClass':'text-danger'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'borderClass':'border-success', 'icon':'../../../assets/ico/approve.svg', 'text':'Approved', 'textClass':'text-success'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'borderClass':'border-dgray', 'icon':'../../../assets/ico/setting-black.svg', 'text':'Setting', 'textClass':'text-dgray'}"></ng-container>
+                </span>
+                <span class="d-flex justify-content-between">
+                    <ng-container *ngTemplateOutlet="outlineRectIcon; context:{'borderClass':'border-dblue', 'icon':'../../../assets/ico/email-blue.svg', 'text':'Email', 'textClass':'text-dblue'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="outlineRectIcon; context:{'borderClass':'border-black', 'icon':'../../../assets/ico/printer.svg', 'text':'Print', 'textClass':'text-dark'}"></ng-container>
+                </span>
+            </span>
+        </div>
+    </div>
+    <div class="mt-3 py-2 px-4 rounded-pill primary-border mini-card-shadow">
+        <span class="d-flex align-items-center justify-content-between">
+            <span class="text-secondary">
+                <i data-feather="chevron-left"></i>
+                <i data-feather="chevron-right"></i>
+            </span>
+            <span class="d-flex">
+                <ng-container *ngTemplateOutlet="outlineRectIcon; context:{'borderClass':'border-action', 'iconClass':'chevron-up', 'text':'Auto Fill', 'textClass':'text-secondary'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineRectIcon; context:{'fillClass':'bg-success', 'icon':'../../../assets/ico/authorize.svg', 'text':'Authorise', 'textClass':'text-white'}"></ng-container>
+            </span>
+        </span>
+    </div>
+</section>
+<section class="py-4">
+    <div class="card p-2">
+        <div class="card-header bg-light d-flex align-items-center p-0">
+            <span class="p-3 border-end"><img src="../../../assets//ico/grid.svg" height="20px" width="20px"></span>
+            <h4 class="d-inline text-secondary mb-0 ps-3 h-100">Quick Links</h4>
+        </div>
+        <div class="card-body d-flex">
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-blue', 'icon':'../../../assets/ico/total-qout-light.svg', 'text':'Qoutation', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-success', 'icon':'../../../assets/ico/ic_description_24px.svg', 'text':'Invoice', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-warning', 'icon':'../../../assets/ico/ic_assignment_24px.svg', 'text':'Container Type', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-danger', 'icon':'../../../assets/ico/ic_library_books_24px.svg', 'text':'Qout Detail', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-megenda', 'icon':'../../../assets/ico/ic_person_24px.svg', 'text':'Client', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-gray', 'icon':'../../../assets/ico/ic_domain_24px.svg', 'text':'City', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-gray', 'icon':'../../../assets/ico/ic_group_24px.svg', 'text':'Sales Man', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-info', 'icon':'../../../assets/ico/ic_forum_24px.svg', 'text':'Notification', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-blue', 'icon':'../../../assets/ico/Group 40529.svg', 'text':'Users', 'textClass':'text-white'}"></ng-container>
+            <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'fillClass':'bg-blue', 'icon':'../../../assets/ico/Group 40526.svg', 'text':'Settings', 'textClass':'text-white'}"></ng-container>
+        </div>
+    </div>
+</section>
+<hr>
+
+<router-outlet></router-outlet>
+
+<ng-template #outlineSquareIcon let-normalText="normalText" let-boldClass="boldClass" let-fill="fillClass" let-borderClass="borderClass" let-icon="icon" let-text="text" let-textClass="textClass">
+    <div class="px-3 py-2 mx-2 {{borderClass}} {{fill}} text-center rounded mini-square-shadow lh-1" [ngClass]="{'py-3':fill || normalText}">
+        <img *ngIf="!fill && icon" src="{{icon}}" height="15px" width="15px">
+        <img *ngIf="fill && icon" src="{{icon}}" height="20px" width="20px">
+        <br *ngIf="!normalText">
+        <small *ngIf="!fill && !normalText" class="small fw-bold {{normalText}} {{textClass}}">{{text}}</small>
+        <h5 *ngIf="!fill && normalText" class="fw-bold my-auto text-secondary">{{text}}</h5>
+        <p *ngIf="fill" class="me-2 text-white mt-1 mb-0">{{text}}</p>
+    </div>
+</ng-template>
+<ng-template #outlineRectIcon let-display="display" let-fill="fillClass" let-borderClass="borderClass" let-iconClass="iconClass" let-icon="icon" let-text="text" let-textClass="textClass">
+    <div class="{{borderClass}} {{fill}} {{display}} mini-square-shadow mx-2 p-3 rounded text-center my-auto">
+        <small class="fw-bold {{textClass}} me-2 small">{{text}}</small>
+        <img *ngIf="!iconClass" src="{{icon}}" height="20px" width="20px">
+        <i *ngIf="iconClass" class="fw-bold {{textClass}}" attr.data-feather="{{iconClass}}"></i>
+    </div>
+</ng-template>

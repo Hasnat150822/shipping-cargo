@@ -1,0 +1,31 @@
+<section class="py-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6"> 
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail ID', 'id':'qId'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Line No', 'id':'qlineno'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Quantity', 'id':'qdquantity'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Remarks of Each Line', 'id':'qdquantity', 'type':'textarea'}"></ng-container>
+                </div>
+                <div class="col-6"> 
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Header ID', 'id':'qhid'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Type Id', 'id':'qdsid'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Size of Container', 'id':'qduprice', 'type':'select'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Weight of the Cargo', 'id':'qdvatedvalue'}"></ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<ng-template #commonInput let-label="label" let-id="id" let-type="type">
+    <div class="form-group mb-3">
+        <label for=""> {{label}} </label>
+        <input *ngIf="!type" id="{{id}}" type="text" class="form-control">
+        <textarea *ngIf="type=='textarea'" cols="20" rows="10" class="form-control"></textarea>
+        <select *ngIf="type=='select'" class="form-control">
+            <option value="">20 feet</option>
+        </select>
+    </div>
+</ng-template>

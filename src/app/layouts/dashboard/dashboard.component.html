@@ -1,0 +1,242 @@
+<div id="counterCards" class="row" appMatchHeight="countCards" equalChilds="true">
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="commCard" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/dull-user-groups.svg', 'bgClass':'bg-light-magenda','id':'comm', 'text':'Commercial Users', 'count':'97', 'icon':'../../assets/ico/user-groups.svg'}">
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="indCard" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/single-user.svg', 'bgClass':'bg-light-blue','id':'indiv','text':'Individual User', 'count':'25', 'icon':'../../assets/ico/individual-user.svg'}">
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="partnerCard" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/hand-shake.svg', 'bgClass':'bg-light-parot','id':'partner','text':'Total Partners', 'count':'14', 'icon':'../../assets/ico/total-partners.svg'}">
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="adminCard" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/admin-person.svg', 'bgClass':'bg-light-gold','id':'admin','text':'Total Admin', 'count':'23', 'icon':'../../assets/ico/total-admin.svg'}">
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="qoutationCard" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/qoutation-dull.svg', 'bgClass':'bg-light-pink','id':'qoutation','text':'Total Qoutations', 'count':'54', 'icon':'../../assets/ico/total-qout.svg'}">
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="totalVisitor" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/total-visitor-dull.svg', 'bgClass':'bg-light-green','id':'visitor','text':'Total Visitors', 'count':'6554', 'icon':'../../assets/ico/total-visitor.svg'}">
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="totalInvoice" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/toatl-invoices-dull.svg', 'bgClass':'bg-light-pink','id':'invoices','text':'Total Invoices', 'count':'615', 'icon':'../../assets/ico/total-invoices.svg'}">
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-4 my-2">
+        <div id="totalBooking" class="d-flex primary-border countCards br-12 justify-content-between p-3">
+            <ng-container
+                *ngTemplateOutlet="countCard; context:{'hoverIcon':'../../../assets/ico/total-booking-dull.svg', 'bgClass':'bg-light-navy','id':'booking','text':'Total Booking', 'count':'59', 'icon':'../../assets/ico/total-booking.svg'}">
+            </ng-container>
+        </div>
+    </div>
+</div>
+<div class="row my-2">
+    <div class="col-lg-9 col-md-8">
+        <div class="card primary-border br-12">
+            <div class="card-body">
+                <div class="row align-items-end pt-4">
+                    <div class="col-lg-3 col-5 text-end pe-4">
+                        <h4 class="mb-0">Total Booking</h4>
+                        <h3 class="text-secondary mb-0">$324.55</h3>
+                    </div>
+                    <div class="col-lg-9 col-7 text-end">
+                        <div class="pe-5">
+                            <img src="../../../assets/ico/fill-chevron-up.svg" height="10px" width="12px">
+                            &nbsp; <small class="fw-bold">+7.45%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <canvas id="totleBookChart" baseChart width="100%" [data]="lineChartData" [options]="lineChartOptions"
+                        type="line" [legend]="false">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div id="bigHCards" class="row py-4 align-items-center">
+            <div class="col-lg-3 col-sm-12">
+                <ng-container
+                    *ngTemplateOutlet="sameCards; context:{id:'lateCard', 'lightColor':'light-cyan', 'title':'Late', 'bgClass':'light-cyan-gradient', 'colorClass':'dark-cyan', 'borderClass':'border-cyan', 'leftBorder':'border-cyan-left', data:lateData}">
+                </ng-container>
+            </div>
+            <div class="col-lg-6 col-sm-12 my-4 my-lg-0">
+                <div class="card flex-row p-0 m-0 mini-card-shadow mini-card-radius" appMatchHeight="lateCard" matchHeight="true">
+                    <div class="text-center sidebar text-white invice-card-header py-4 px-1 primary-gradient-90">
+                        <h4>$25,215</h4>
+                        <div id="miniChart" class="pt-2 text-end">
+                            <span class="pb-4">....</span>
+                            <div class="text-end mt-4">
+                                <img src="../../../assets/ico/Graph.svg" height="25px" width="60px">
+                            </div>
+                            <div>
+                                <canvas id="chart7" baseChart width="100%" height="60px" [data]="miniChartData"
+                                    [options]="miniChartOptions" type="line" [legend]="false">
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="title dark-primary">
+                        INVICE
+                    </h4>
+                    <div class="content-era mt-2 flex-grow-1">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0">
+                                <img src="../../../assets/ico/Group 3065.svg" alt="Sample Image" height="30px" width="35px">
+                            </div><div class="flex-grow-1 ms-1">
+                                <h5 class="mb-0">Bills &amp; Taxes</h5>
+                                <small class="text-muted">Today, 16:36</small>
+                            </div>
+                            <p class="mb-0 me-3">-24</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0">
+                                <img src="../../../assets/ico/Group 3066.svg" alt="Sample Image" height="30px" width="35px">
+                            </div><div class="flex-grow-1 ms-1">
+                                <h5 class="mb-0">Bills &amp; Taxes</h5>
+                                <small class="text-muted">Today, 16:36</small>
+                            </div>
+                            <p class="mb-0 me-3">-24</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0">
+                                <img src="../../../assets/ico/Group 3068.svg" alt="Sample Image" height="30px" width="35px">
+                            </div><div class="flex-grow-1 ms-1">
+                                <h5 class="mb-0">Bills &amp; Taxes</h5>
+                                <small class="text-muted">Today, 16:36</small>
+                            </div>
+                            <p class="mb-0 me-3">-24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <ng-container
+                    *ngTemplateOutlet="sameCards; context:{'lightColor':'light-red','title':'Notification', 'bgClass':'light-red-gradient', 'colorClass':'dark-red', 'borderClass':'border-red', 'leftBorder':'border-red-left',data:notiData}">
+                </ng-container>
+            </div>
+        </div>
+        <div class="card p-5 pb-0 br-12 primary-border">
+            <div class="card-body pb-0">
+                <div class="row">
+                    <div class="col-6 text-center  text-secondary pt-4 pb-5">
+                        <strong>Stay Connected</strong>
+                        <div class="social-icons d-flex py-4 justify-content-center flex-wrap">
+                            <img class="me-3 mb-2 mb-lg-0" height="30px" width="30px"
+                                src="../../../assets//ico/5282541_fb_social media_facebook_facebook logo_social network_icon.svg"
+                                alt="">
+                            <img class="me-3" height="30px" width="30px"
+                                src="../../../assets//ico/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                                alt="">
+                            <img class="me-3" height="30px" width="30px"
+                                src="../../../assets//ico/5282544_camera_instagram_social media_social network_instagram logo_icon.svg"
+                                alt="">
+                            <img class="me-3" height="30px" width="30px"
+                                src="../../../assets//ico/5282546_chat_facebook_message_messenger_messenger logo_icon.svg"
+                                alt="">
+                            <img height="30px" width="30px"
+                                src="../../../assets//ico/5282551_tweet_twitter_twitter logo_icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 border-start ps-4">
+                        <div>
+                            <span>
+                                <img src="../../../assets/ico/ic_call_24px.svg" height="20px" width="20px" alt=""
+                                    srcset="">
+                            </span>
+                            <p class="pt-2 text-secondary">US 8443165544 | UK 08000856099</p>
+                        </div>
+                        <div class="pt-4">
+                            <span>
+                                <img src="../../../assets/ico/ic_email_24px.svg" height="20px" width="20px" alt=""
+                                    srcset="">
+                            </span>
+                            <p class="text-secondary">support@zohobooks.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="smallCards" class="col-lg-3 col-md-4 mt-4 mt-md-0">
+        <ng-container
+            *ngTemplateOutlet="bookingCards; context:{'data':compBookChartData, 'id':'chart1', 'type':'Completed', 'bgClass':'primary-gradient-90'}">
+        </ng-container>
+        <ng-container
+            *ngTemplateOutlet="bookingCards; context:{'data':pendBookChartData, 'id':'chart2', 'type':'Pending', 'bgClass':'peach-gradient'}">
+        </ng-container>
+        <ng-container
+            *ngTemplateOutlet="bookingCards; context:{'data':inProgBookChartData, 'id':'chart3','type':'In Progress', 'bgClass':'zink-gradient'}">
+        </ng-container>
+    </div>
+</div>
+<ng-template #countCard let-hoverIcon="hoverIcon" let-bgClass="bgClass" let-text="text" let-count="count" let-icon="icon" let-id="id">
+    <div class="text">
+        <p class="text-secondary">{{text}}</p>
+        <h3>{{count}}</h3>
+    </div>
+    <div id="{{id}}">
+        <img class="icon {{bgClass}}" src="{{icon}}" height="80" width="80" alt="" srcset="">
+        <img class="icon {{bgClass}} hover-icon" src="{{hoverIcon}}" height="80" width="80" alt="" srcset="">
+    </div>
+</ng-template>
+
+<ng-template #bookingCards let-data="data" let-id="id" let-type="type" let-bgClass="bgClass">
+    <div class="card mb-4 border-0 mini-card-shadow mini-card-radius">
+        <div class="card-header {{bgClass}} right-ended-radius text-white">
+            <h3 class="text-end me-3">25</h3>
+            <h5>{{type}} Booking</h5>
+        </div>
+        <div class="card-body">
+            <canvas id="{{id}}" baseChart width="100%" height="200px" [data]="data" [options]="compBookChartOptions"
+                type="line" [legend]="false">
+            </canvas>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #sameCards let-id="id" let-title="title" let-borderClass="borderClass" let-bgClass="bgClass"
+    let-colorClass="colorClass" let-data="data" let-leftBorder="leftBorder" let-lightColor="lightColor">
+    <div id="{{id}}" class="card border-0 mini-card-shadow mini-card-radius {{colorClass}}">
+        <div class="py-3 ps-5 card-header {{borderClass}} {{bgClass}} right-ended-radius">
+            <h5>{{title}}</h5>
+        </div>
+        <div class="card-body ps-5">
+            <p *ngFor="let item of data" class="conjested-p mb-2 {{leftBorder}} ps-2">
+                <small class="d-block mb-0 fw-bold"> {{item.title}} </small>
+                <small class="{{lightColor}}">{{item.date || item.time}}</small>
+            </p>
+            <p class="text-end mb-0">
+                <small class="fw-bold">View</small> <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </p>
+        </div>
+    </div>
+</ng-template>

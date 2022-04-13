@@ -1,0 +1,9 @@
+#pilltab{
+    a{
+        cursor: pointer;
+        margin-right: .5rem;
+    }
+    a:last-child{
+        margin-right: 0rem !important;
+    }
+}

@@ -1,0 +1,16 @@
+.main{
+    padding: 15px 20px;
+}
+.content-area{
+    width: -webkit-calc(100% - 50px);
+    width:    -moz-calc(100% - 50px);
+    width:         calc(100% - 50px);
+    padding-inline: 1rem;
+}
+.sidebar{
+    width: 50px;
+    border-radius:0px 12px 12px 0px;
+}
+footer{
+    padding-inline: 20px;
+}

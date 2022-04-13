@@ -1,0 +1,11 @@
+<svg id="Component_21_2" data-name="Component 21 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.584" height="65.248" viewBox="0 0 47.584 65.248">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.274" x2="-0.595" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#19547b"/>
+      <stop offset="1" stop-color="#ffd89b"/>
+    </linearGradient>
+  </defs>
+  <path id="ic_description_24px" d="M21.627,2h23.5c3.232,0,5.846,2.19,5.846,4.866l.608,55.517c0,2.676-2.615,4.866-5.846,4.866H10.454c-3.232,0-5.876-2.19-5.876-4.866L4,16.6ZM15.751,40.925h23.5V36.059h-23.5Zm0-9.731h23.5V26.328h-23.5ZM24.565,19.03V5.649L8.407,19.03Z" transform="translate(-4 -2)"/>
+  <path id="ic_description_24px-2" data-name="ic_description_24px" d="M21.627,2h23.5c3.232,0,5.846,2.19,5.846,4.866l.608,55.517c0,2.676-2.615,4.866-5.846,4.866H10.454c-3.232,0-5.876-2.19-5.876-4.866L4,16.6ZM15.751,40.925h23.5V36.059h-23.5Zm0-9.731h23.5V26.328h-23.5ZM24.565,19.03V5.649L8.407,19.03Z" transform="translate(-4 -2)" fill="url(#linear-gradient)"/>
+  <path id="ic_check_circle_24px" d="M13.314,2C7.069,2,2,6.2,2,11.369s5.069,9.369,11.314,9.369,11.314-4.2,11.314-9.369S19.56,2,13.314,2ZM11.052,16.054,5.394,11.369l1.6-1.321L11.052,13.4l8.588-7.111,1.6,1.33Z" transform="translate(18.023 40.53)" fill="#fff"/>
+</svg>

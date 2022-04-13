@@ -1,0 +1,14 @@
+<section class="pt-5 pb-4">
+    <div class="card">
+        <app-component-navigation [navData]="navData" (selectedTab)="getCurrentTab($event)"></app-component-navigation>
+        <div class="card-body">
+            <article>
+                <app-action-buttons></app-action-buttons>
+                <app-single-qoutation *ngIf="tabName == 'Qoutation'"></app-single-qoutation>
+                <app-qoutation-container *ngIf="tabName == 'Qoutation Container'"></app-qoutation-container>
+                <app-qoutation-details *ngIf="tabName == 'Qoutation Detail'"></app-qoutation-details>
+            </article>
+        </div>
+    </div>
+</section>
+<app-qoutation-footer></app-qoutation-footer>

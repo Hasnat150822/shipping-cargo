@@ -1,0 +1,55 @@
+<section class="py-4">
+    <div class="card">
+        <div class="card-body">
+            <section class="py-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <button appMatchHeight="addValueBtn" matchHeight="true" class="w-200px btn bg-success px-4 py3 text-white mini-square-shadow">
+                                Discount
+                            </button>
+                            <button appMatchHeight="addValueBtn" matchHeight="true" class="w-200px btn bg-blue px-4 py3 mx-3 text-white mini-square-shadow">
+                                Coupen Code
+                            </button>
+                            <button appMatchHeight="addValueBtn" matchHeight="true" class="w-200px btn bg-yellow px-4 py3 mx-3 text-white mini-square-shadow">
+                                <p class="text-end d-inline-flex mb-0">
+                                    % <br> Vat Tax
+                                </p>
+                            </button>
+                            <button id="addValueBtn" class="add-tax-btn w-200px btn bg-gray px-4 py3 text-white mini-square-shadow">
+                                Additional Value Added Tax
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="d-flex py-2 justify-content-center">
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'QoutExp', 'borderClass':'border-dgray'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'Voyage', 'borderClass':'border-dgray'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'Vessel', 'borderClass':'border-dgray'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'T.Amount', 'borderClass':'border-dgray'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'T.Discount', 'borderClass':'border-dgray'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'T.vat', 'borderClass':'border-dgray'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'T.Cost', 'borderClass':'border-dgray'}"></ng-container>
+                <ng-container *ngTemplateOutlet="outlineSquareIcon; context:{'normalText':'h6 my-auto', 'text':'Q.Remarks', 'borderClass':'border-dgray'}"></ng-container>
+            </div>
+        </div>
+    </div>
+</section>
+<ng-template #outlineRectIcon let-display="display" let-fill="fillClass" let-borderClass="borderClass" let-iconClass="iconClass" let-icon="icon" let-text="text" let-textClass="textClass">
+    <div class="{{borderClass}} {{fill}} {{display}} mini-square-shadow mx-2 p-3 rounded text-center my-auto">
+        <small class="fw-bold {{textClass}} me-2 small">{{text}}</small>
+        <img *ngIf="!iconClass" src="{{icon}}" height="20px" width="20px">
+        <i *ngIf="iconClass" class="fw-bold {{textClass}}" attr.data-feather="{{iconClass}}"></i>
+    </div>
+</ng-template>
+<ng-template #outlineSquareIcon let-normalText="normalText" let-boldClass="boldClass" let-fill="fillClass" let-borderClass="borderClass" let-icon="icon" let-text="text" let-textClass="textClass">
+    <div class="px-3 py-2 mx-2 {{borderClass}} {{fill}} text-center rounded mini-square-shadow lh-1" [ngClass]="{'py-3':fill || normalText}">
+        <img *ngIf="!fill && icon" src="{{icon}}" height="15px" width="15px">
+        <img *ngIf="fill && icon" src="{{icon}}" height="20px" width="20px">
+        <br *ngIf="!normalText">
+        <small *ngIf="!fill && !normalText" class="small fw-bold {{normalText}} {{textClass}}">{{text}}</small>
+        <h5 *ngIf="!fill && normalText" class="fw-bold my-auto text-secondary">{{text}}</h5>
+        <p *ngIf="fill" class="me-2 text-white mt-1 mb-0">{{text}}</p>
+    </div>
+</ng-template>

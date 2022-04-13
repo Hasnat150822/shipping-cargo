@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.779" height="71.154" viewBox="0 0 50.779 71.154">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.201" y1="-0.104" x2="-0.232" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff512f"/>
+      <stop offset="1" stop-color="#dd2476"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3036" data-name="Group 3036" transform="translate(-1100.129 471.501)">
+    <g id="Group_3036-2" data-name="Group 3036" transform="translate(1100.129 -471.501)">
+      <path id="Subtraction_39" data-name="Subtraction 39" d="M35.309,55.695H4.413C1.98,55.695,0,53.2,0,50.124V16L10.427,5.569h3.21C14.594,2.239,17.1,0,19.862,0s5.267,2.238,6.223,5.569h9.225c2.434,0,4.414,2.5,4.414,5.571V50.124C39.724,53.2,37.743,55.695,35.309,55.695ZM8.827,38.986v5.569H24.275V38.986Zm0-11.14v5.571H30.9V27.847Zm0-11.138v5.569H30.9V16.709ZM19.862,5.569a2.55,2.55,0,0,0-2.207,2.785,2.55,2.55,0,0,0,2.207,2.785,2.55,2.55,0,0,0,2.206-2.785A2.55,2.55,0,0,0,19.862,5.569Z" transform="translate(11.056 15.459)" fill="url(#linear-gradient)"/>
+      <path id="ic_mode_edit_24px" d="M3,27.475v6.44H9.44L28.435,14.921l-6.44-6.44ZM33.415,9.94a1.71,1.71,0,0,0,0-2.422L29.4,3.5a1.71,1.71,0,0,0-2.422,0L23.832,6.643l6.44,6.44L33.415,9.94Z" transform="translate(-3 -2.997)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<section class="py-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6"> 
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail ID', 'id':'qId'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Line No', 'id':'qlineno'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Quantity', 'id':'qdquantity'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Discount', 'id':'qddisc'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Cost Price', 'id':'qdcostprice'}"></ng-container>
+                </div>
+                <div class="col-6"> 
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Header ID', 'id':'qhid'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Service Id', 'id':'qdsid', 'icon':'plus'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Unit Price', 'id':'qduprice'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'label':'Qoutation Detail Vated Value', 'id':'qdvatedvalue'}"></ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<ng-template #commonInput let-label="label" let-id="id" let-icon="icon">
+    <div class="form-group mb-3">
+        <label for=""> {{label}} </label>
+        <input *ngIf="!icon" id="{{id}}" type="text" class="form-control">
+        <div *ngIf="icon" class="position-relative">
+            <input id="{{id}}" type="text" class="form-control">
+            <span  class="py-1 px-2 text-secondary border border-secondary rounded inside-input-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus" ><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </span>
+        </div>
+    </div>
+</ng-template>

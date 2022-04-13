@@ -1,0 +1,81 @@
+.title{
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    text-align: end;
+    margin: 25px 2px;
+}
+.conjested-p{
+    line-height: 1;
+}
+.conjested-p>small{
+    font-size: 11px !important;
+    
+}
+#commCard, #indCard, #partnerCard, #adminCard, #qoutationCard, #totalVisitor, #totalInvoice, #totalBooking{
+    background:none; transition: all .35s ease-in-out;}
+#commCard:hover, #indCard:hover, #partnerCard:hover, #adminCard:hover, #qoutationCard:hover, #totalVisitor:hover, #totalInvoice:hover, #totalBooking:hover{
+    cursor: pointer;
+    color: white !important;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    background-size: 80px 80px;
+    border: none !important;
+    .text-secondary{
+        color: white !important;
+    }
+    img{
+        display: none;
+    }
+    .hover-icon{
+        display: inline;
+    }
+}
+#commCard:hover{
+    background: rgb(218,34,255) !important;
+    background: linear-gradient(90deg, rgba(218,34,255,1) 0%, rgba(151,51,238,1) 100%) !important;
+}
+
+#indCard:hover{
+    background: rgb(134,140,255) !important;
+    background: linear-gradient(90deg, rgba(134,140,255,1) 0%, rgba(67,24,255,1) 100%) !important;
+}
+
+#partnerCard:hover{
+    background: rgb(56,239,125) !important;
+    background: linear-gradient(90deg, rgba(56,239,125,1) 0%, rgba(17,153,142,1) 100%) !important;
+}
+
+#adminCard:hover{
+    background: rgb(249,212,35) !important;
+    background: linear-gradient(90deg, rgba(249,212,35,1) 0%, rgba(230,92,0,1) 100%) !important;
+}
+
+#qoutationCard:hover{
+    background: rgb(242,112,156) !important;
+    background: linear-gradient(90deg, rgba(242,112,156,1) 0%, rgba(255,148,114,1) 100%) !important;
+}
+
+#totalVisitor:hover{
+    background: rgb(168,224,99) !important;
+    background: linear-gradient(90deg, rgba(168,224,99,1) 0%, rgba(86,171,47,1) 100%) !important;
+}
+
+#totalInvoice:hover{
+    background: rgb(236,0,140) !important;
+    background: linear-gradient(90deg, rgba(236,0,140,1) 0%, rgba(252,103,103,1) 100% !important);
+}
+
+#totalBooking:hover{
+    background: rgb(25,84,123) !important;
+    background: linear-gradient(90deg, rgba(25,84,123,1) 0%, rgba(128,128,128,1) 100%) !important;
+}
+
+.hover-icon{
+    display: none;
+}
+#totleBookChart{height: 250px;}
+@media (min-width: 768px) {
+    #totleBookChart{
+        height: 200px !important;
+    }
+}

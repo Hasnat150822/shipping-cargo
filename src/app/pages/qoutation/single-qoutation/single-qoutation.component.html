@@ -1,0 +1,300 @@
+<section class="py-4">
+    <div class="card">
+        <span class="nav-link bg-purple fw-bold fit-width text-white br-12 mt-n4">Customer Name</span>
+        <div class="card-body">
+            <div class="form-group form-group w-75 m-auto">
+                <label for="">Company / Client Name</label>
+                <div class="d-flex">
+                    <select name="" id="" class="form-control">
+                        <option value=""></option>
+                    </select>
+                    <ng-container *ngTemplateOutlet="outlineRectIcon; context:{'display':'d-inline-flex align-items-center','fillClass':'bg-purple', 'iconClass':'search', 'text':'Search', 'textClass':'text-white'}"></ng-container>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 px-3 my-5 border-end">
+                    <input type="text" value="Detail TX Sales" class="text-center form-control w-75 ms-auto">
+                </div>
+                <div class="col-6 px-3 my-5">
+                    <input type="text" value="View Customer Detail" class="text-center form-control w-75 me-auto">
+                </div>
+                <div class="col-6 px-3 py-3 text-end border-end">
+                    <span class="me-3">Billing Address</span>
+                    <ng-container *ngTemplateOutlet="outlineRectIcon; context:{'display':'d-inline me-0','fillClass':'bg-purple', 'icon':'../../../../assets/ico/ic_remove_red_eye_24px_white.svg', 'text':'View', 'textClass':'text-white'}"></ng-container>
+                </div>
+                <div class="col-6 px-3 my-4">
+                    <ng-container *ngTemplateOutlet="outlineRectIcon; context:{'right':'true', 'display':'d-inline ms-0','fillClass':'bg-purple', 'icon':'../../../../assets/ico/ic_remove_red_eye_24px_white.svg', 'text':'View', 'textClass':'text-white'}"></ng-container>
+                    <span class="ms-3">Billing Address</span>
+                </div>
+                <div class="col-6 px-3 my-3 text-end py-2 border-end">
+                    <span class="me-5">
+                        Add New Address
+                    </span>
+                    <span class="py-1 px-2 text-secondary border border-secondary rounded">
+                        <i data-feather="plus"></i>
+                    </span>
+                </div>
+                <div class="col-6 px-3 my-4">
+                    <span class="py-1 px-2 text-secondary border border-secondary rounded">
+                        <i data-feather="plus"></i>
+                    </span>
+                    <span class="ms-5">
+                        Add New Address 
+                    </span>
+                </div>
+                <div class="col-6 px-3 my-5">
+                    <input type="text" class="text-center form-control w-90 ms-auto" value="Qoutation Date Select Picker">
+                </div>
+                <div class="col-6 px-3 my-5">
+                    <input type="date" class="form-control w-25">
+                </div>
+                <div class="col-6 px-3">
+                    <div class="form-group position-relative">
+                        <label for="">Qoutation Branch ID#</label>
+                        <div class="position-relative">
+                            <input type="password" class="form-control">
+                            <i data-feather="x" class="inside-input-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 px-3">
+                    <div class="form-group">
+                        <label for="">Qoutation Code</label>
+                        <div class="position-relative">
+                            <input type="password" class="form-control">
+                            <i data-feather="x" class="inside-input-icon pos-right-spacer"></i>
+                            <img class="inside-input-icon feather-x" src="../../../../assets/ico/ic_remove_red_eye_24px_gray.svg" height="18px" width="18px">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 px-3 mt-3">
+                    <div class="form-group">
+                        <label for="">Qoutation Sales Man</label>
+                        <select name="" id="" class="form-control">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6 px-3 mt-4">
+                    <div class="form-group pt-3">
+                        <div class="d-flex">
+                            <select name="" id="" class="form-control w-75 me-2">
+
+                            </select>
+                            <span class="py-1 px-2 text-secondary border border-secondary rounded">
+                                <i data-feather="plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="row align-items-end">
+                <div class="px-4 col-6">
+                    <select name="" id="" class="form-control text-center">
+                        <option value="">Qoutation Subject</option>
+                    </select>
+                </div>
+                <div class="px-4 col-4 border-start border-end">
+                    <input type="text" class="form-control" value="Qoutation in Charge Person Name">
+                </div>
+                <div class="px-4 col-2">
+                    <label for="">Qoutation Type</label>
+                    <select name="" id="" class="form-control text-center">
+                        <option value="">Import</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4">
+    <div class="card">
+        <span class="nav-link bg-purple fw-bold fit-width text-white br-12 mt-n4">Client Details</span>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Qoutation Client ID#</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control">
+                            <i data-feather="x" class="inside-input-icon"></i>
+                        </div>
+                        <p class="justify-content-end mb-0 d-flex"> <span class="p-1 rounded border border-secondary"> <i class="feather-16" data-feather="edit-3"></i> Edit </span> </p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Qoutation Client Name</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control">
+                            <i data-feather="x" class="inside-input-icon"></i>
+                        </div>
+                        <p class="d-flex justify-content-between"> 
+                            <span class="p-1 rounded bg-action"> <i class="feather-16" data-feather="user-plus"></i> Add New Client  </span>
+                            <span class="p-1 rounded border border-secondary"> <i class="feather-16" data-feather="edit-3"></i> Edit  </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4">
+    <div class="card">
+        <span class="nav-link bg-purple fw-bold fit-width text-white br-12 mt-n4">Qoutation Cargo Details</span>
+        <div class="card-body">
+            <div class="form-group form-group w-50 m-auto">
+                <div>
+                    <p class="text-end mb-0 text-white"><span class="bg-danger rounded"> <img src="../../../assets/ico/ic_delete_24px.svg" height="16" width="16"> Discard </span></p>
+                    <select type="text" class="form-control me-2">
+                        <option value="">Qoutation Cargo Details</option>
+                    </select>
+                    <p class="justify-content-end mb-0 d-flex"> <span class="p-1 rounded border border-secondary"> <i class="feather-16" data-feather="edit-3"></i> Edit </span> </p>
+                </div>
+            </div>
+            <div class="text-center py-4">
+                <span class="me-5">
+                    Add New Cargo Detail
+                </span>
+                <span class="py-1 px-2 text-secondary border border-secondary rounded">
+                    <i data-feather="plus"></i>
+                </span>
+            </div>
+            <div class="row align-items-end">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for=""> Port of Loaading port </label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control">
+                            <i data-feather="x" class="inside-input-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="position-relative">
+                        <input type="text" class="form-control">
+                        <i data-feather="x" class="inside-input-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4">
+    <div class="card">
+        <span class="nav-link bg-purple fw-bold fit-width text-white br-12 mt-n4">Qoutation Payment</span>
+        <div class="card-body">
+            <form class="mt-5 mb-3">
+                <div class="row">
+                    <div class="col-6 my-3">
+                        <div class="form-group">
+                            <label for=""> Qoutation terms of Payment </label>
+                            <select name="" id="" class="form-control">
+                                <option value=""></option>
+                            </select>
+                            <p class="justify-content-end mb-0 d-flex"> <span class="p-1 rounded border border-secondary"> <i class="feather-16" data-feather="edit-3"></i> Edit </span> </p>
+                        </div>
+                    </div>
+                    <div class="col-6 my-3">
+                        <div class="form-group">
+                            <div class="d-flex justify-content-between">
+                                <label for=""> Currency </label>
+                                <span class="px-2 bg-success-xd rounded text-white"> <img src="../../../assets/ico/ic_add_box_24px.svg" height="16px" width="16px"> Add New </span>
+                            </div>
+                            <select name="" id="" class="form-control">
+                                <option value=""></option>
+                            </select>
+                            <p class="justify-content-end mb-0 d-flex"> <span class="p-1 rounded border border-secondary"> <i class="feather-16" data-feather="edit-3"></i> Edit </span> </p>
+                        </div>
+                    </div>
+                    <div class="col-6 my-3">
+                        <ng-container *ngTemplateOutlet="commonInput; context:{'ftX':'true', 'label':'Qoutation Customer Email', 'id':'custemail'}"></ng-container>
+                    </div>
+                    <div class="col-6 my-3">
+                        <label for="">Country</label>
+                        <div class="row">
+                            <div class="col-9">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 my-3">
+                        <ng-container *ngTemplateOutlet="commonInput; context:{'ftX':'true','label':'Address', 'id':'address'}"></ng-container>
+                    </div>
+                    <div class="col-6 my-3">
+                        <ng-container *ngTemplateOutlet="commonInput; context:{'ftX':'true','label':'Amount', 'id':'amount'}"></ng-container>
+                    </div>
+                    <div class="col-6 my-3">
+                        <label for="">Qoutation Shipping Pollicy</label>
+                        <div class="row">
+                            <div class="col-9">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <button class="btn bg-purple text-white">Read</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="py-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Qoutation Port of Discharge', 'id':'portdischarge'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quot Customer Telephone ', 'id':'custTel'}"></ng-container>
+                    <label for="">Quotation Remarks</label>
+                    <textarea name="" id="" cols="15" rows="8" class="form-control"></textarea>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quot Port Of Loading', 'id':'portlanding'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quotation Vessel', 'id':'qoutvess'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quotation Total Discount', 'id':'totalDisc'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quotation Total Cost', 'id':'totalCost'}"></ng-container>
+                </div>
+                <div class="col-6">
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quotation Detailed Description', 'id':'qoutdesc'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quot Customer Address', 'id':'custAdd'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quot Additonal Value For Expenses', 'id':'qoutaddexpens'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quotation Voyage', 'id':'qoutvoyag'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quot Total Before Discount', 'id':'beforediscount'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quotation Total VAT', 'id':'totalvat'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Dangerous Class Of The Goods', 'id':'classgoods'}"></ng-container>
+                    <ng-container *ngTemplateOutlet="commonInput; context:{'margin':'my-3', 'label':'Quotation Status', 'id':'qoutstatus', 'type':'select'}"></ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<ng-template #outlineRectIcon let-right="right" let-display="display" let-fill="fillClass" let-borderClass="borderClass" let-iconClass="iconClass" let-icon="icon" let-text="text" let-textClass="textClass">
+    <div class="{{borderClass}} {{fill}} {{display}} mini-square-shadow mx-2 p-3 rounded text-center my-auto">
+        <small *ngIf="!right" class="fw-bold {{textClass}} me-2 small">{{text}}</small>
+        <img *ngIf="!iconClass" src="{{icon}}" height="20px" width="20px">
+        <small *ngIf="right" class="fw-bold {{textClass}} ms-2 small">{{text}}</small>
+        <i *ngIf="iconClass" class="fw-bold {{textClass}}" attr.data-feather="{{iconClass}}"></i>
+    </div>
+</ng-template>
+<ng-template #commonInput let-type="type" let-ftX="ftX" let-margin="margin" let-label="label" let-id="id">
+    <div class="form-group {{margin}}">
+        <label for=""> {{label}} </label>
+        <div *ngIf="ftX" class="position-relative">
+            <input id="{{id}}" type="text" class="form-control">    
+            <i data-feather="x" class="inside-input-icon"></i>
+        </div>
+        <input *ngIf="!ftX && type!=='select'" id="{{id}}" type="text" class="form-control">
+        <select *ngIf="type=='select'" name="" id="" class="form-control">
+            <option value=""></option>
+        </select>
+    </div>
+</ng-template>

@@ -1,0 +1,133 @@
+<section class="pt-5 pb-4">
+    <div class="card">
+        <app-component-navigation [navData]="['Qoutation Detail']"></app-component-navigation>
+        <div class="card-body">
+            <article>
+                <div class="mt-3 py-2 px-5 rounded-pill primary-border mini-square-shadow">
+                    <span class="d-flex align-items-center justify-content-between">
+                        <span class="text-secondary">
+                            <div class="d-flex align-items-center">
+                                <span>Show &nbsp;</span>
+                                <div class="position-relative">
+                                    <select type="text" class="border rounded px-2 py-1"> 
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <span> &nbsp; &nbsp;Entreis</span>
+                            </div>
+                        </span>
+                        <span>
+                            <div class="d-flex align-items-center">
+                                <span>Search: &nbsp;</span>
+                                <input type="text" class="border py-1 rounded">
+                            </div>
+                        </span>
+                    </span>
+                </div>
+                <table class="table-bordered mt-3 d-table w-100 text-center">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>
+                            <img src="../../../assets/ico/Vector.svg" height="20px" width="20px">
+                            <p class="mb-0">Qoutation ID</p>
+                        </th>
+                        <th>
+                            <img src="../../../assets/ico/ic_chrome_reader_mode_24px.svg" height="20px" width="20px">
+                            <p class="mb-0">Branch Id</p>
+                        </th>
+                        <th>
+                            <i data-feather="user"></i>
+                            <p class="mb-0">Client Name</p>
+                        </th>
+                        <th>
+                            <img src="../../../assets/ico/ic_assignment_24px_black.svg" height="20px" width="20px">
+                            <p class="mb-0">Qoutation Type</p>
+                        </th>
+                        <th>
+                            <img src="../../../assets/ico/ic_monetization_on_24px.svg" height="20px" width="20px">
+                            <p class="mb-0">Total Amount</p>
+                        </th>
+                        <th>
+                            <img src="../../../assets/ico/ic_description_24px_black.svg" height="20px" width="20px">
+                            <p class="mb-0">Remarks</p>
+                        </th>
+                        <th>
+                            <img src="../../../assets/ico/ic_domain_24px_black.svg" height="20px" width="20px">
+                            <p class="mb-0">Status</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="d-flex justify-content-center py-3">
+                                <div routerLink="/qout/view-qout" class="px-3 mx-2 cursor-pointer bg-megenda text-center rounded mini-square-shadow lh-1 py-2">
+                                    <img src="../../../assets/ico/ic_border_color_24px.svg" height="20px" width="20px">
+                                    <br>
+                                    <p class="me-2 text-white mt-1 mb-0">Edit</p>
+                                </div>
+                                <div class="px-3 mx-2 cursor-pointer bg-danger text-center rounded mini-square-shadow lh-1 py-2">
+                                    <img src="../../../assets/ico/ic_delete_white_24px.svg" height="20px" width="20px">
+                                    <br>
+                                    <p class="me-2 text-white mt-1 mb-0">Delete</p>
+                                </div>
+                                <div routerLink="/qout/view-qout" class="px-3 mx-2 cursor-pointer bg-success text-center rounded mini-square-shadow lh-1 py-2">
+                                    <img src="../../../assets/ico/ic_remove_red_eye_24px.svg" height="20px" width="20px">
+                                    <br>
+                                    <p class="me-2 text-white mt-1 mb-0">View</p>
+                                </div>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="d-flex justify-content-center py-3">
+                                <div routerLink="/qout/view-qout" class="px-3 mx-2 cursor-pointer bg-megenda text-center rounded mini-square-shadow lh-1 py-2">
+                                    <img src="../../../assets/ico/ic_border_color_24px.svg" height="20px" width="20px">
+                                    <br>
+                                    <p class="me-2 text-white mt-1 mb-0">Edit</p>
+                                </div>
+                                <div class="px-3 mx-2 cursor-pointer bg-danger text-center rounded mini-square-shadow lh-1 py-2">
+                                    <img src="../../../assets/ico/ic_delete_white_24px.svg" height="20px" width="20px">
+                                    <br>
+                                    <p class="me-2 text-white mt-1 mb-0">Delete</p>
+                                </div>
+                                <div routerLink="/qout/view-qout" class="px-3 mx-2 cursor-pointer bg-success text-center rounded mini-square-shadow lh-1 py-2">
+                                    <img src="../../../assets/ico/ic_remove_red_eye_24px.svg" height="20px" width="20px">
+                                    <br>
+                                    <p class="me-2 text-white mt-1 mb-0">View</p>
+                                </div>
+                            </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <nav class="mt-2">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#"> <i data-feather="chevron-left"></i> </a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i data-feather="chevron-right"></i></a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                  </nav>
+            </article>
+        </div>
+    </div>
+</section>

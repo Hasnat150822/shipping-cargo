@@ -1,0 +1,16 @@
+<svg id="Group_3066" data-name="Group 3066" xmlns="http://www.w3.org/2000/svg" width="45.63" height="64.224" viewBox="0 0 45.63 64.224">
+  <ellipse id="Icon_background" data-name="Icon background" cx="22.815" cy="32.112" rx="22.815" ry="32.112" fill="#f4f7fe"/>
+  <g id="electric_car" transform="translate(9.778 13.762)">
+    <g id="Group">
+      <path id="Vector" d="M0,0H26.074V36.7H0Z" fill="none"/>
+    </g>
+    <g id="Group-2" data-name="Group" transform="translate(3.259 1.529)">
+      <g id="Group-3" data-name="Group">
+        <path id="Vector-2" data-name="Vector" d="M17.3,1.544A1.776,1.776,0,0,0,15.753,0H3.8C3.085,0,2.488.642,2.26,1.544L0,10.7V22.937c0,.841.489,1.529,1.086,1.529H2.173c.6,0,1.086-.688,1.086-1.529V21.408H16.3v1.529c0,.841.489,1.529,1.086,1.529h1.086c.6,0,1.086-.688,1.086-1.529V10.7ZM4.183,3.058H15.362l1.173,4.756H3.009Zm13.2,15.291H2.173V10.7h15.21Z" fill="#05cd99"/>
+        <path id="Vector-3" data-name="Vector" d="M3.259,2.294c0,1.267-.73,2.294-1.63,2.294S0,3.561,0,2.294.73,0,1.63,0,3.259,1.027,3.259,2.294Z" transform="translate(3.259 12.233)" fill="#05cd99"/>
+        <path id="Vector-4" data-name="Vector" d="M3.259,2.294c0,1.267-.73,2.294-1.63,2.294S0,3.561,0,2.294.73,0,1.63,0,3.259,1.027,3.259,2.294Z" transform="translate(13.037 12.233)" fill="#05cd99"/>
+      </g>
+      <path id="Vector-5" data-name="Vector" d="M0,3.058H4.346V0l6.519,4.587H6.519V7.646Z" transform="translate(4.346 25.996)" fill="#05cd99"/>
+    </g>
+  </g>
+</svg>
